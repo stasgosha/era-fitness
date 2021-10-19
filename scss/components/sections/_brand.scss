@@ -1,0 +1,16 @@
+.brand {
+    padding:100px 0;
+    .header-section {
+        margin-bottom: 43px;
+    }
+}
+
+
+.brand__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    grid-gap:53px 30px;
+    justify-content: center;
+}
+.brand__list-item {
+}

@@ -1,0 +1,111 @@
+.main {
+    position: relative;
+    background: $darkBlue;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(270deg, rgba(30, 30, 64, 0.75) 13.46%, rgba(35, 41, 89, 0) 64.61%);
+    }
+}
+.main__inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.main__bg {
+}
+.main__wrapper {
+    position: absolute;
+    bottom: 186px;
+    right: 232px;
+}
+.main__content {
+}
+.main__content-title,
+.main__content-subtitle {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 65px;
+}
+.main__content-subtitle {
+    background-color: #F0891A;
+    background-image: linear-gradient(to left, #EA8418, #ECC633);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 21px;
+}
+.main__content-text {
+    line-height: 1.6;
+    letter-spacing: -0.1px;
+    font-size: 16px;
+    padding-right: 7px;
+    width: 421px;
+    margin-bottom: 25px;
+}
+.main__buttons {
+    display: flex;
+    margin-right: 11px;
+}
+.main__button {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid $white;
+    padding: 15px 59px 12px 64px;
+
+    transform: skew(-10deg);
+
+    span{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.6;
+        transform: skew(10deg);
+    }
+}
+.main__button--current {
+    margin-left:12px;
+    border: none;
+    padding: 14px 66px 12px 70px;
+}
+.main__text{
+    position: absolute;
+    left: 36px;
+    bottom:53px;
+}
+
+.main__social {
+    position: absolute;
+    bottom: 28px;
+    right: 241px;
+    display: flex;
+    align-items: center;
+}
+.main__social-link {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: -0.1px;
+
+    & + &{
+        padding-right: 18px;
+        margin-right: 18px;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            right:0;
+            bottom: 7px;
+            height: 10px;
+            width: 1px;
+            background-color: $white;
+        }
+    }
+}

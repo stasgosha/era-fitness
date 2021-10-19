@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.container {
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        transform: translateX(-28px);
+        width: 94.94%;
+        height: 1px;
+        background-color:#4E537D;
+    }
+}
+.header__logo {
+}
+.header__logo-link {
+}
+.header__logo-img {
+}
+.header__location {
+    margin-left: 183px;
+}
+.header__location-text {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    position: relative;
+    padding-right: 18px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 17px;
+        height: 17px;
+        background-image: url(../../../images/maps-and-flags.svg);
+    }
+}
+.header__nav {
+    ul{
+        display: flex;
+        align-items: center;
+        margin-left: 189px;
+        margin-right: 27px;
+        li{
+            &:not(:first-child){
+                margin-right: 69px;
+            }
+        }
+        a{
+            font-size: 14px;
+            line-height: 1.6;
+            transition: all .6s;
+            padding-bottom: 30px;
+            position: relative;
+            z-index: 5;
+            
+
+            &:hover{
+                color:#EB8C1B;
+                border-bottom: 1px solid #EB8C1B;
+            }
+        }
+    }
+}

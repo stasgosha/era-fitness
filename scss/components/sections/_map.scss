@@ -1,0 +1,78 @@
+.map {
+    padding: 100px 0;
+}
+.map__inner{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+
+    iframe{
+        position: absolute;
+        top: 0;
+    }
+}
+.map__info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #232959 0%, #232959 0.01%, #1E1E40 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 810px;
+    transform: skew(-10deg);
+    margin-right: auto;
+    overflow: hidden;
+}
+.map__info-wrapper {
+    transform: skew(10deg);
+    position: relative;
+    padding: 62px 119px 70px 0;
+
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 21px;
+        width: 247px;
+        height: 147px;
+        background-image: url(../../../images/map-sircle.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: skew(-10deg);
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -32px;
+        left: 101px;
+        width: 247px;
+        height: 147px;
+        background-image: url(../../../images/application-point-icon.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: skew(0deg);
+    }
+}
+.map__info-cards {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-gap: 82px 30px;
+    margin-bottom: 38px;
+}
+.map__info-card {
+}
+.map__info-card-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    img{
+        &:first-child{
+            margin-left: 10px;
+        }
+    }
+}
+.map__info-card-text {
+}
+.map__info-btn {
+    display: flex;
+}
