@@ -4,34 +4,38 @@
     left: 0;
     width: 100%;
     z-index: 10;
-}
-.container {
-}
-.header__wrapper{
-    display: flex;
-    align-items: center;
-    padding-bottom: 3px;
-    position: relative;
+    
+
     &::before{
         content: "";
         position: absolute;
-        bottom: 0;
-        right: 0px;
-        transform: translateX(-28px);
-        width: 94.94%;
-        height: 1px;
-        background-color:#4E537D;
+        width: 100%;
+        height: 100%;
+        background: $darkBlue;
+        transition: opacity .5s linear;
+        opacity:0;
     }
 }
-.header__logo {
+
+.header.active::before{
+    opacity:1;
 }
-.header__logo-link {
+.header__wrapper{
+    max-width: 1410px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2px;
+    position: relative;
+    border-bottom: 1px solid #4E537D;
+    transition: border .4s;
 }
-.header__logo-img {
+
+.header__wrapper.active{
+    border-bottom: 0px solid #4E537D;
 }
-.header__location {
-    margin-left: 183px;
-}
+
 .header__location-text {
     font-size: 16px;
     line-height: 1.6;
@@ -53,11 +57,10 @@
     ul{
         display: flex;
         align-items: center;
-        margin-left: 189px;
-        margin-right: 27px;
+        // margin-left: 9.8vw;
         li{
             &:not(:first-child){
-                margin-right: 69px;
+                margin-right: 2.59vw;
             }
         }
         a{
@@ -72,6 +75,52 @@
             &:hover{
                 color:#EB8C1B;
                 border-bottom: 1px solid #EB8C1B;
+            }
+        }
+    }
+}
+
+.header__menu-btn{
+    display: none;
+}
+
+@media(max-width:940px){
+    .header{
+        background: $darkBlue;
+    }
+    .header__wrapper{
+        border-bottom: none;
+    }
+    .header__location{
+        display: none;
+    }
+    .header__menu-btn{
+        display: block;
+    }
+    .header__nav{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 68px;
+        right: 0%;
+        background: $darkBlue;
+        padding-right: 35px;
+        padding-left: 35px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            li{
+                width: 100%;
+                padding-top: 17px;
+                padding-bottom: 17px;
+                &:not(:first-child){
+                    margin-right: 0vw;
+                    border-top: 1px solid rgba(238, 238, 238, 0.1);
+                }
+            }
+            a{
+                font-size: 16px;
             }
         }
     }

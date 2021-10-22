@@ -1,0 +1,37 @@
+.pesonal-photo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pesonal-photo__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    grid-gap:30px 30px;
+    justify-content: center;
+    margin: 44px 0 50px;
+}
+.pesonal-photo__card {
+    display: block;
+}
+.pesonal-photo__card-img {
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(35, 41, 89, 0) -27.81%, #1E1E40 100%);
+    }
+}
+.pesonal-photo__btn {
+    display: flex;
+    justify-content: center;
+
+    a{
+        padding: 14px 50px;
+    }
+}

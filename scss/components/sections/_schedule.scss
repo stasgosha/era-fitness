@@ -5,14 +5,14 @@
     max-width: 1920px;
     margin: 0 auto;
 
-    .header-section {
+    .descr {
         &::after{
             right: 0;
             transform: translateX(0);
             top: 70px;
         }
     }
-    .header-section__subtitle {
+    .descr__subtitle {
         font-style: italic;
         font-weight: bold;
         font-size: 45px;
@@ -48,9 +48,10 @@
 }
 .schedule__content-text {
     margin-bottom: 14px;
+    line-height: 1.6;
 }
 .schedule__content-btn {
-    max-width: 300px;
+    display: flex;
 
     a{
         font-style: italic;
@@ -58,6 +59,7 @@
         font-size: 14px;
         line-height: 1.6;
         color: #1F2147;
+        padding: 14px 50px;
     }
 }
 .schedule__card{

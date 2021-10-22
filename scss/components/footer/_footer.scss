@@ -41,13 +41,44 @@
     color: #A1A2BC;
     font-weight: 400;
     width: 177px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-right: 32px;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 39px;
+        height: 3px;
+        background-image: url(../../../images/line-dark-blue.svg);
+        background-repeat: no-repeat;
+    }
 }
 .footer__copy {
+    margin-top: 67px;
+    padding: 20px 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #232959 0%, #232959 0.01%, #1E1E40 100%);
+}
+.footer__copy-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .footer__copy-location {
+    position: relative;
+    padding-right: 20px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 17px;
+        height: 17px;
+        background-image: url(../../../images/maps-and-flags.svg);
+    }
 }
 .footer__copy-text {
 }
@@ -55,5 +86,9 @@
     ul{
         display: flex;
         align-items: center;
+
+        li:first-child{
+            margin-left: 10px;
+        }
     }
 }

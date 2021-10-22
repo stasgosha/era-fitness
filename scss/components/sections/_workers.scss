@@ -1,14 +1,12 @@
 .workers{
     padding-top: 100px;
-    overflow-x: hidden;
-    .header-section{
+    padding-bottom: 100px;
+    .descr{
         margin-bottom: 30px;
     }
 }
 .workers__cards--slider{
     position: relative;
-    
-
     .slick-arrow{
         display: block;
         position: absolute;
@@ -29,8 +27,30 @@
         transform: skew(-10deg);
     }
 }
+.workers__cards.workers__cards--slider{
+    overflow-x: hidden;
+}
+.workers__cards.workers__cards--slider .worker__card{
+    &-img{
+        &::before{
+            width: calc(100% - 9px);
+        }
+    }
+}
+
+
+
+
+
+
+
 .workers__cards {
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    grid-gap:48px 30px;
+    justify-content: center;
+
+
     margin: 0 -30px;
     .slick-slide {
         padding: 0 15px;
@@ -43,6 +63,8 @@
 .worker__card {
     width: 330px;
     height: 490px;
+    cursor: pointer;
+    position: relative;
 }
 .worker__card-img {
     margin-bottom: 18px;
@@ -78,3 +100,62 @@
     line-height: 1.6;
     color: #323232;
 }
+
+
+.workers-social{
+    .worker__card{
+
+        &:hover .worker__card-img img{
+            filter: grayscale(0);
+        }
+
+        &-img{
+            img{
+                filter: grayscale(100%);
+                transition: all .6s;
+            }
+        }
+    }
+}
+
+
+.workers-price{
+    .worker__card{
+        &-img{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #232959 0%, #232959 0.01%, #1E1E40 100%);
+                opacity: 0.65;  
+            }
+        }
+        .worker__card-btn{
+            cursor: pointer;
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: -5px;
+                left: -6px;
+                width: 70px;
+                height: 70px;
+                background-image: url(../../../images/btn-play-sircle.svg);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+

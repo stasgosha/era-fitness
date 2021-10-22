@@ -1,0 +1,41 @@
+.offer {
+}
+.offer__cards {
+    display: grid;
+    grid-template-columns:repeat(4, 220px);
+    grid-gap: 40px 180px;
+    justify-content: center;
+    align-items: center;
+}
+.offer__card {
+}
+.offer__card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $ywGradient;
+    border-radius: 100%;
+    width: 136px;
+    height: 136px;
+    margin: 0 auto 23px;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 158px;
+        height: 158px;
+        background-image: url(../../../images/offer-ellipse.svg);
+        background-repeat: no-repeat;
+    }
+}
+.offer__card-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #323232;
+}

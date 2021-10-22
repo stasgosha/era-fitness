@@ -1,7 +1,7 @@
 .application {
     padding-top: 119px;
     padding-bottom: 159px;
-    .header-section {
+    .descr {
         text-align: right;
 
         &::after{
@@ -9,10 +9,10 @@
             transform: translateX(0);
         }
     }
-    .header-section__title {
+    .descr__title {
         margin-bottom: 24px;
     }
-    .header-section__subtitle {
+    .descr__subtitle {
     }
 }
 .application__inner {

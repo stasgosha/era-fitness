@@ -2,17 +2,18 @@
     display: block;
     text-align: center;
     cursor: pointer;
-    padding: 14px 66px 12px 70px;
     transform: skew(-10deg);
     background: $ywGradient;
     border: none;
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1F2147;
 
     span{
         display: inline-block;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.6;
-        color: #1F2147;
         transform: skew(10deg);
     }
 }

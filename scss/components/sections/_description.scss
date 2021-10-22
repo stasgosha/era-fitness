@@ -1,0 +1,113 @@
+.description {
+    padding: 151px 0 100px 0;
+}
+.description__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.description__img {
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    z-index: -1;
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -60px;
+        left:0;
+        border-top: 600px solid #fff;
+        border-right: 150px solid transparent;
+    }
+}
+.description__content {
+    max-width: 832px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #232959 0%, #232959 0.01%, #1E1E40 100%);
+    transform: skew(-10deg);
+    overflow: hidden;
+    position: relative;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 270px;
+        height: 200px;
+        background-image: url(../../../images/description-sircle.svg);
+        background-repeat: no-repeat;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 27px;
+        left: 65px;
+        width: 121px;
+        height: 129px;
+        background-image: url(../../../images/application-point-icon.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: skew(10deg);
+    }
+}
+.description__content-text {
+    transform: skew(10deg);
+    padding: 64px 120px 0;
+    max-width: 770px;
+
+    h4{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 1.6;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 62px;
+            height: 5px;
+            background-image: url(../../../images/adv-line.svg);
+            background-repeat: no-repeat;
+        }
+    }
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    p + p{
+        margin:40px 0;
+    }
+}
+.description__content-btn {
+    padding:0 80px 64px 0;
+    transform: skew(10deg);
+    display: flex;
+    align-items: center;
+
+    a{
+        padding: 14px 50px;
+    }
+}
+
+
+.description__content-btn-price{
+    margin-right: 19px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.6;
+    background-color: #F0891A;
+    background-image: linear-gradient(to right, #EA8418, #ECC633);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

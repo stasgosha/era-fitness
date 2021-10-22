@@ -12,30 +12,11 @@
 // Common
 @import "components/common/buttons";
 @import "components/common/title";
-@import "components/common/forms";
-@import "components/common/sliders";
-@import "components/common/modals";
+@import "components/common/pagination";
 
 
 
 // Sections
-// @import "components/sections/first-screen-section";
-// @import "components/sections/split-video-section";
-// @import "components/sections/directions-section";
-// @import "components/sections/about-section";
-// @import "components/sections/player-section";
-// @import "components/sections/house-section";
-// @import "components/sections/method-section";
-// @import "components/sections/characteristic-section";
-// @import "components/sections/news-section";
-// @import "components/sections/media-section";
-// @import "components/sections/testimonials-section";
-// @import "components/sections/category-header-section";
-// @import "components/sections/articles-list-section";
-// @import "components/sections/single-header-section";
-// @import "components/sections/single-post-section";
-// @import "components/sections/new-single-post-section";
-// @import "components/sections/page-header-section";
 @import "components/sections/main";
 @import "components/sections/workers";
 @import "components/sections/schedule";
@@ -43,6 +24,15 @@
 @import "components/sections/article";
 @import "components/sections/brand";
 @import "components/sections/map";
+@import "components/sections/description";
+@import "components/sections/offer";
+@import "components/sections/gallery";
+@import "components/sections/advantages";
+@import "components/sections/contact";
+@import "components/sections/subscription";
+@import "components/sections/schedule-table-section";
+@import "components/sections/coach-statistics";
+@import "components/sections/pesonal-photo";
 
 
 @import "slick";

@@ -1,0 +1,157 @@
+.coach-statistics {
+    padding-top: 90px;
+    padding-bottom: 97px;
+}
+
+
+
+.coach-statistics__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.coach-statistics__promo {
+    position: relative;
+}
+.coach-statistics__promo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coach-statistics__promo-img {
+    transform: skew(-10deg);
+    img{
+        filter: grayscale(100%);
+    }
+}
+.coach-statistics__promo-btn {
+    display: flex;
+    position: absolute;
+    a{
+        padding: 14px 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.coach-statistics__content {
+    max-width: 691px;
+    margin-right: 141px;
+}
+.coach-statistics__content-title {
+    h2{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 1.6;
+        text-align: right;
+        color: #323232;
+        padding-bottom: 5px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 61px;
+            height: 5px;
+            background-image: url(../../../images/coach-line.svg);
+            background-repeat: no-repeat;
+        }
+    }
+}
+.coach-statistics__content-text {
+    max-width: 560px;
+    p{
+        font-size: 16px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: #323232;
+    }
+}
+
+
+
+.coach-statistics__content-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 56px;
+    margin-bottom: 49px;
+}
+.coach-statistics__content-number {
+    text-align: center;
+
+
+    &:nth-child(2){
+        padding-left: 62px;
+        padding-right: 61px;
+        border-left: 1px solid  #EAEAEA;
+        border-right: 1px solid  #EAEAEA;
+    }
+}
+.coach-statistics__content-number-title {
+    background-color: #F0891A;
+    background-image: linear-gradient(to top, #F0891A, #EAC632);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.coach-statistics__content-number-text {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+
+
+.coach-statistics__content-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 225px);
+    grid-gap: 6px 5px;
+
+
+
+    a{
+        
+        position: relative;
+        span{
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #232959 0%, #232959 0.01%, #1E1E40 100%);
+            opacity: 0.65;
+        }
+    }
+}
+
